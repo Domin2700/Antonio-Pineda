@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using ApiDomingo.Context;
 using ApiDomingo.Models;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,6 +12,7 @@ namespace ApiDomingo.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [EnableCors("MyCorsPolicy")]
     public class UsuarioController : Controller
     {
         private readonly ApplicationDbContext _context;

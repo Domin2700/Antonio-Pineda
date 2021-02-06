@@ -1,0 +1,21 @@
+create database dbTest
+use dbTest
+
+create table Departamento (
+IdDepartamento int identity primary key,
+Nombre nvarchar(50) unique not null
+);
+
+
+create table Usuario (
+ IdUsuario int identity primary key,
+ Nombres nvarchar(50) not null,
+ Apellidos nvarchar(50) not null,
+ Genero nchar not null,
+ Cedula nvarchar(11) unique not null,
+ IdDepartamento nvarchar not null  foreign key references Departamento(IdDepartamento),
+ Cargo nvarchar(40) not null,
+ Supervisor nvarchar(50)
+
+
+);
