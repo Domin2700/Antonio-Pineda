@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Domingo_Ant._Pineda.Models;
+using ApiDomingo.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Domingo_Ant._Pineda.Context
+namespace ApiDomingo.Context
 {
     public class ApplicationDbContext:DbContext
     {

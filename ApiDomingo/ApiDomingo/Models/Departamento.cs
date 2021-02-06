@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Domingo_Ant._Pineda.Models
+namespace ApiDomingo.Models
 {
     public class Departamento
     {

@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Domingo_Ant._Pineda.Context;
-using Domingo_Ant._Pineda.Models;
+using ApiDomingo.Context;
+using ApiDomingo.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace Domingo_Ant._Pineda.Controllers
+namespace ApiDomingo.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
